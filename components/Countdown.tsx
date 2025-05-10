@@ -3,6 +3,7 @@ import SelmCountdown from "@/app/assets/SelmCountdown.jpg";
 import mobileCountdown from "@/app/mobile/mobileCountdown.jpg";
 import Selm from "./Selm";
 import { useEffect, useState } from "react";
+import LoadingCircleSpinner from "./Loading";
 
 const launch_date = new Date(Date.UTC(2025, 5, 30, 0, 0, 0)).getTime();
 
@@ -39,11 +40,16 @@ const Countdown = () => {
     return () => clearInterval(interval);
   }, []);
 
-  if (!timerLeft) return <p>Loading countdown...</p>;
+  if (!timerLeft)
+    return (
+      <div className="relative h-screen flex items-start md:items-center lg:items-start justify-center">
+        <LoadingCircleSpinner />
+      </div>
+    );
   return (
     <div
       id="countdown"
-      className="relative h-fit flex items-start md:items-center lg:items-start justify-center"
+      className="relative h-screen flex items-start md:items-center lg:items-start justify-center"
     >
       <Selm img={SelmCountdown} pic={mobileCountdown} title="Countdown image" />
       <div className="flex flex-col items-center justify-center z-10 mt-30 gap-10">

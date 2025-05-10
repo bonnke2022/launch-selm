@@ -12,8 +12,8 @@ const Promo = () => {
   return (
     <div id="promo" className="relative flex min-h-screen overflow-hidden">
       <Selm img={blackSelm} pic={mobileSelm} title="Promo image" />
-      <div className="z-10 max-w-6xl overflow-hidden h-screen flex flex-col lg:flex-row  items-start md:items-center lg:items-end justify-around pb-10 lg:pl-20">
-        <section className="flex flex-col md:w-1/2 lg:w-full px-4 pt-4">
+      <div className="z-10 max-w-7xl overflow-hidden h-screen flex flex-col lg:flex-row  items-start md:items-center justify-around pb-10 lg:pb-0 lg:pl-20">
+        <section className="flex flex-col md:w-1/2 lg:w-full px-4 pt-4 lg:h-60">
           <h1 className="text-3xl lg:text-7xl font-extrabold">
             <span className="text-[#56c035]">63%</span> off
           </h1>
@@ -28,7 +28,7 @@ const Promo = () => {
             business
           </h4>
           <p className="text-xs pb-4 lg:pb-0">
-            That's a full online store, domain, hosting payment integration,
+            That is a full online store, domain, hosting payment integration,
             mobile responsiveness, business email, everything at just 37%
           </p>
           <div className="self-center flex flex-col items-center w-full">
@@ -43,7 +43,7 @@ const Promo = () => {
             </Button>
           </div>
         </section>
-        <div className=" w-full relative">
+        <div className=" w-full relative h-100">
           <div className="absolute font-bold top-12 md:top-30 md:left-8  left-6 lg:left-10 rotate-330">
             <p>1,143,000</p>
             <p>423, 000</p>
@@ -53,7 +53,7 @@ const Promo = () => {
             alt="laptop"
             width={50}
             height={5}
-            className="object-contain w-full"
+            className="object-cover w-full"
             loading="lazy"
             priority={false}
             unoptimized

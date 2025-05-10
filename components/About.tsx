@@ -26,11 +26,11 @@ const About = () => {
               SELMCORP is more than a tech agency
             </h1>
             <h3 className="text-primary font-bold text-[10.7px] md:text-2xl">
-              we're a business-building powerhouse.
+              we are a business-building powerhouse.
             </h3>
           </div>
           <p className="text-[10.1px] md:text-[14.1px]">
-            We don't just write code, we create scalable solutions that help
+            We do not just write code, we create scalable solutions that help
             African entrepreneurs thrive. From e-commerce websites to mobile
             apps and digital mentorship, we exist to empower growth, ignite
             innovation and drive the future of business through tech.
